@@ -1,3 +1,13 @@
 {
-  "items": []
+  "items": [
+    {
+      "title": "AMA Foundation in the studio",
+      "date": "2026-10-06",
+      "type": "Video",
+      "image": "/assets/studio-session.jpg",
+      "video_url": "https://youtube.com/shorts/dcZYFoQj4rs",
+      "summary": "Watch a featured AMA Foundation media moment from the studio.",
+      "published": true
+    }
+  ]
 }
