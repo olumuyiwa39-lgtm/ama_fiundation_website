@@ -22,4 +22,4 @@ To turn on editor sign-in:
 
 Once authentication is configured, edits are committed to `main` and Netlify publishes them automatically. Decap’s GitHub backend requires repository push access for CMS editors.
 
-No founder photographs or other user-supplied media were present in the material used for this migration. Upload approved photos in the editor or place them in `assets/uploads/` and add them through the CMS.
+The site includes user-provided founder, broadcasting and community photographs in `assets/`. Additional AMA TV story images can be uploaded from `/admin/` to `assets/uploads/` and added through the CMS. Keep original photo context and captions accurate. Videos should be hosted on YouTube or another video service and linked in the editor.
