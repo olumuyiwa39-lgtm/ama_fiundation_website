@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: olumuyiwa39-lgtm/ama_fiundation_website
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+site_url: https://amafoundatio.netlify.app
+display_url: https://amafoundatio.netlify.app
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: ama_tv
+    label: AMA TV
+    files:
+      - name: media_library
+        label: Stories and media
+        file: content/media.json
+        fields:
+          - label: Published stories
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Date, name: date, widget: datetime, required: false }
+              - label: Format
+                name: type
+                widget: select
+                options: [Video, Article, Photo, Programme]
+              - { label: Cover image, name: image, widget: image, required: false }
+              - { label: Video URL, name: video_url, widget: string, required: false }
+              - { label: Article URL, name: article_url, widget: string, required: false }
+              - { label: Short description, name: summary, widget: text }
+              - { label: Show on website, name: published, widget: boolean, default: true }
